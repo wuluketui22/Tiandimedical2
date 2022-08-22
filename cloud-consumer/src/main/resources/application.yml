@@ -1,0 +1,15 @@
+###### 设置项目启动端口号
+server:
+  port: 8888
+spring:
+  ###### 配置项目应用名
+  application:
+    name: cloud-consumer
+  ###### 开启 Spring Boot Bean Override 机制
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    ###### 配置 Nacos Server 注册地址
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
